@@ -1,4 +1,4 @@
-package _36.operadores_atribuicao_cumulativa;
+package _38.operadores_atribuicao_cumulativa;
 
 import java.util.Scanner;
 import java.util.Locale;
