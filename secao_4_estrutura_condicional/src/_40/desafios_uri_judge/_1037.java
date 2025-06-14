@@ -14,21 +14,19 @@ public class _1037 {
 		
 		if (n >= 0 && n <= 100) {
 			if (n >= 0 && n <= 25.0000)
-				intervalo = "0,25";
+				System.out.println("Intervalo [0,25]");
 			else if (n >= 25.0001 && n <= 50.0000) {
-				intervalo = "25,50";
+				System.out.println("Intervalo (25,50]");
 			}
 			
 			else if (n >= 50.0001 && n <= 75.0000) {
-				intervalo = "50,75";
+				System.out.println("Intervalo (50,75]");
 			}
 			
 			else if (n >= 75.0001 && n <= 100) {
-				intervalo = "75,100";
+				System.out.println("Intervalo (75,100]");
 			}
 			
-			System.out.printf("Intervalo (%s)%n", intervalo);
-
 		}
 		
 		else {
