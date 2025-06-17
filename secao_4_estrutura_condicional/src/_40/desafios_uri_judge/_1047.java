@@ -18,10 +18,10 @@ public class _1047 {
 		if (mt == 0) {
 			hf = 24;
 			mf = 0;
-		} else if (h1 > h2) {
-			mt = h1 * 60 + m1;
-			hf = 23 - (mt / 60);
-			mf = 60 - (mt % 60);
+		} else if (mt < 0) {
+			mt = 1440 - Math.abs(mt);
+			mf = mt % 60;
+			hf = (mt - mf) / 60;
 		} else {
 			mf = (mt % 60);
 			hf = (mt - mf) / 60;
