@@ -1,5 +1,5 @@
 package desafio_1118;
-import java.util.Scanner;
+import java.util.Scanner; 
 import java.util.Locale;
 
 /**
@@ -23,52 +23,38 @@ A média deve ser impressa com dois dígitos após o ponto decimal.*
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
 		
-		int notaValida = 0;
-		double soma = 0;
-		
-		while (notaValida != 2) {
-			double nota = sc.nextDouble();
-			
-			if (nota >= 0 && nota <= 10) {
-				soma += nota;
-				notaValida += 1;
-			} else {
-				System.out.println("nota invalida");
-			}
-		}
-		
-		System.out.printf("media = %.2f%n", soma/2);
-		System.out.println("novo calculo (1-sim 2-nao)");
-		int resposta = sc.nextInt();
-		
-		if (resposta != 1 && resposta != 2) {
-			System.out.println("novo calculo (1-sim 2-nao)");
-			resposta = sc.nextInt();
-		} 
+		int resposta = 1;
 		
 		while (resposta == 1) {
-			notaValida = 0;
-			soma = 0;
+			double soma = 0;
+			int notaValida = 0;
 			
-			double nota = sc.nextDouble();
-			
-			if (nota >= 0 && nota <= 10) {
-				soma += nota;
-				notaValida += 1;
-			} else {
-				System.out.println("nota invalida");
+			while (notaValida < 2) {
+				double nota = sc.nextDouble();
+				
+				if (nota >= 0 && nota <= 10) {
+					soma += nota;
+					notaValida += 1;
+				} else {
+					System.out.println("nota invalida");
+				}
+				
 			}
+			
+			System.out.printf("media = %.2f%n", soma / 2);
+			System.out.println("novo calculo (1-sim 2-nao)");
+			resposta = sc.nextInt();
+				
+				while (resposta != 1 && resposta != 2) {
+					System.out.println("novo calculo (1-sim 2-nao)");
+					resposta = sc.nextInt();
+				}
 		}
-		
-		System.out.printf("media = %.2f%n", soma/2);
-		System.out.println("novo calculo (1-sim 2-nao)");
-		resposta = sc.nextInt();
 		
 		
 		sc.close();
 	}
-
 }
