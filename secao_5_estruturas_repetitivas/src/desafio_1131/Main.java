@@ -45,7 +45,7 @@ public class Main {
 				empates += 1;
 			}
 			
-			System.out.println("Novo grenal (1-sim 2-nao");
+			System.out.println("Novo grenal (1-sim 2-nao)");
 			novoGrenal = sc.nextInt();
 		}
 		
