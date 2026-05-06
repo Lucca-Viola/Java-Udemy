@@ -7,12 +7,13 @@ public class _1001_ {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-
-		int X = A + B;
+		int a,b,x;
 		
-		System.out.printf("X = %d%n", X);
+		a = sc.nextInt();
+		b = sc.nextInt();
+		x = a+b;
+		
+		System.out.println("X = " + x);
 		
 		sc.close();
 	}

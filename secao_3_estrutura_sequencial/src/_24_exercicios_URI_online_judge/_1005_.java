@@ -1,19 +1,19 @@
 package _24_exercicios_URI_online_judge;
 
+import java.util.Locale;
 import java.util.Scanner;
-
 public class _1005_ {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double A = sc.nextDouble();
-		double B = sc.nextDouble();
+		double a,b,m;
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		m = ((a*3.5)+(b*7.5))/11;
 		
-		double MEDIA = (A * 3.5 + B * 7.5) / 11;
-		
-		System.out.printf("MEDIA = %.5f%n", MEDIA);
-		
+		System.out.printf("MEDIA = %.5f%n", m);
 		sc.close();
 	}
 

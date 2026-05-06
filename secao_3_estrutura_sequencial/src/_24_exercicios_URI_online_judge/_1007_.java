@@ -7,15 +7,16 @@ public class _1007_ {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		int C = sc.nextInt();
-		int D = sc.nextInt();
+		int a,b,d,c,dd;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
+		d = sc.nextInt();
 		
-		int DIFERENCA = (A * B) - (C * D);
+		dd = (a*b-c*d);
 		
-		System.out.printf("DIFERENCA = %d%n", DIFERENCA);
+		System.out.printf("DIFERENCA = %d%n", dd);
+		
 		sc.close();
 	}
-
 }

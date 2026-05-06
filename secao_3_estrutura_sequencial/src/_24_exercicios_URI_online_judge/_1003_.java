@@ -5,15 +5,14 @@ import java.util.Scanner;
 public class _1003_ {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		int A = sc.nextInt();
-		int B = sc.nextInt();
+		int a,b,s;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		s = a+b;
 		
-		int SOMA = A + B;
-		
-		System.out.printf("SOMA = %d%n", SOMA);
+		System.out.printf("SOMA = %d%n", s);
 		
 		sc.close();
 	}
